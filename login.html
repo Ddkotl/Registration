@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Вход</title>
+  </head>
+
+  <body
+    class="bg-gray-50 min-h-screen bg-[url('wave.svg')] bg-no-repeat bg-bottom bg-fixed"
+  >
+    <div class="flex justify-between p-3 sm:p-6 items-center">
+      <a class="flex items-center gap-2" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="text-green-600 h-6 sm:h-10"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <span class="text-2sm sm:text-xl font-black">Вход</span>
+      </a>
+      <div>
+        <a
+          class="rounded-md bg-green-600 py-2 px-4 text-white text-xs sm:text-xl font-semibold shadow-lg hover:shadow-xl focus:shadow-xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-200 ease-in-out"
+          href="registr.html"
+          >Зарегестрироваться</a
+        >
+      </div>
+    </div>
+    <div class="flex flex-col justify-center p-3 sm:p-6">
+      <div class="max-w-md mx-auto">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="text-green-600 h-8 sm:h-12 mx-auto"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+          />
+        </svg>
+
+        <h2 class="mt-2 sm:mt-6 text-xl sm:text-3xl font-bold text-gray-900">
+          Войти в аккаунт
+        </h2>
+      </div>
+      <div
+        class="border border-green-700 bg-white/40 backdrop-blur-xl mt-3 sm:mt-6 mx-auto rounded-xl shadow-xl p-5 sm:p-10 max-w-md w-full"
+      >
+        <form action="#" autocomplete="off" class="space-y-2 sm:space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email</label
+            >
+            <div class="relative rounded-md shadow-sm mt-1">
+              <div class="absolute left-0 pl-3 inset-y-0 flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5 text-red-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+                  />
+                </svg>
+              </div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ваш email"
+                class="border-red-300 text-red-900 placeholder-red-300 rounded-md pl-10 pr-10 focus:border-red-500 focus:ring-red-500 text-sm w-full"
+              />
+              <div class="absolute right-0 pr-3 inset-y-0 flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5 text-red-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="mt-2 text-sm text-red-500">Неверный email</p>
+          </div>
+          <div>
+            <label
+              for="password"
+              class="block text-sm font-medium text-gray-700"
+              >Пароль</label
+            >
+            <div class="relative rounded-md shadow-sm mt-1">
+              <div class="absolute left-0 pl-3 inset-y-0 flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5 text-gray-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                placeholder="ваш пароль"
+                class="border-gray-300 rounded-md pl-10 focus:border-green-500 focus:ring-green-500 text-sm w-full"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:justify-between gap-2 justify-center items-center mt-6">
+            <div class="flex gap-3 justify-center items-center">
+              <input class="h-4 w-4 rounded border-gray-600 text-green-600  focus:ring-green-500" type="checkbox" name="remember" id="remember" />
+              <label
+                class="font-medium text-sm text-green-600 hover:text-green-400 "
+                for="remember"
+                >Запомнить меня</label
+              >
+            </div>
+            <a
+              href="forgotPassword.html"
+              class="font-medium text-sm text-green-600 hover:text-green-400"
+            >
+              Забыли пароль?
+            </a>
+          </div>
+          <div>
+            <a
+              class="flex justify-center items-center rounded-md bg-green-600 py-2 px-4 text-white font-semibold shadow-lg hover:shadow-xl focus:shadow-xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-200 ease-in-out"
+              href="#"
+              >Войти</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
