@@ -10,7 +10,7 @@
   <body
     class="bg-gray-50 min-h-screen bg-[url('wave.svg')] bg-no-repeat bg-bottom bg-fixed"
   >
-    <div class="flex justify-between p-3 sm:p-6 items-center">
+    <header class="flex justify-between p-3 sm:p-6 items-center">
       <a class="flex items-center gap-2" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,8 +34,8 @@
           >Зарегестрироваться</a
         >
       </div>
-    </div>
-    <div class="flex flex-col justify-center p-3 sm:p-6">
+    </header>
+    <main class="flex flex-col justify-center p-3 sm:p-6">
       <div class="max-w-md mx-auto">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,6 +59,25 @@
       <div
         class="border border-green-700 bg-white/40 backdrop-blur-xl mt-3 sm:mt-6 mx-auto rounded-xl shadow-xl p-5 sm:p-10 max-w-md w-full"
       >
+        <div
+          class="flex justify-center gap-4 items-center mb-4 bg-red-200 border border-red-500 rounded-md"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-5 h-5 text-red-500"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <p class="text-center my-2 text-sm text-gray-700">
+            Проверьте правильность введенных данных
+          </p>
+        </div>
         <form action="#" autocomplete="off" class="space-y-2 sm:space-y-4">
           <div>
             <label for="email" class="block text-sm font-medium text-gray-700"
@@ -139,11 +158,18 @@
               />
             </div>
           </div>
-          <div class="flex flex-col sm:flex-row sm:justify-between gap-2 justify-center items-center mt-6">
+          <div
+            class="flex flex-col sm:flex-row sm:justify-between gap-2 justify-center items-center mt-6"
+          >
             <div class="flex gap-3 justify-center items-center">
-              <input class="h-4 w-4 rounded border-gray-600 text-green-600  focus:ring-green-500" type="checkbox" name="remember" id="remember" />
+              <input
+                class="h-4 w-4 rounded border-gray-600 text-green-600 focus:ring-green-500"
+                type="checkbox"
+                name="remember"
+                id="remember"
+              />
               <label
-                class="font-medium text-sm text-green-600 hover:text-green-400 "
+                class="font-medium text-sm text-green-600 hover:text-green-400"
                 for="remember"
                 >Запомнить меня</label
               >
@@ -164,6 +190,6 @@
           </div>
         </form>
       </div>
-    </div>
+    </main>
   </body>
 </html>
